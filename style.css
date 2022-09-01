@@ -1,0 +1,157 @@
+@import url(https://fonts.google.com/specimen/Montserrat);
+:root{
+--Verydarkblue: hsl(212, 21%, 14%);
+--Darkgrayishblue: hsl(228, 12%, 48%);
+--White: hsl(0, 0%, 100%);
+--Darkcyan: hsl(158, 36%, 37%);
+--Cream: hsl(30, 38%, 92%);
+}
+body,html{
+    font-size: 14px;
+    background: var(--Cream);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.maincontainer{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 700px;
+    width: 100%;
+    border-radius: 1rem;
+    align-content: center;
+    transform: translate(-50%, -50%);
+}
+.picture img{
+    border-top-left-radius:1rem;
+    border-bottom-left-radius: 1rem;
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: 450px;
+}
+.secondcontainer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: var(--White);
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem;
+    width:max-content;
+    max-width: 330px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    height: 450px;
+}
+.perfume{
+    font-weight: 500;
+    color: var(--Darkgrayishblue);
+    text-align: left;
+    letter-spacing: 0.5rem;
+    margin-top: 1rem;
+    text-transform:uppercase;
+    margin-bottom: 2rem;
+}
+.gab{
+    text-decoration: solid;
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    max-width: 375px;
+    word-spacing: 3px;
+}
+@font-face {
+    font-family: Fraunces;
+    src: url(https://fonts.google.com/specimen/Fraunces);
+}
+.bodytext{
+    font-size: 17px;
+    font-weight: 500;
+    font-family: fraunces;
+    color: var(--Darkgrayishblue);
+    max-width: 375px; 
+}
+
+.price{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    border-radius: 1rem;
+    text-align: center;
+}
+.price1{
+margin-right:1rem;
+font-size: 2.5rem;
+font-weight: 700;
+color: var(--Darkcyan);
+}
+.price2{
+    margin-top: 1rem;
+    font-size: 1rem;
+    padding-right: 1rem;
+    font-weight: 500;
+    text-decoration:line-through;
+    color: var(--Darkgrayishblue);
+} 
+.cart img{
+    padding-left: 1rem;
+    padding-right: 0.6rem;
+    justify-items: center;
+}
+
+.cart{
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background-color: var(--Darkcyan);
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+   padding: 1rem 1rem 1rem 1rem;
+   width: 100%;
+   outline: none;
+   text-align: center;
+   margin-top: 2rem;
+   justify-content: center;
+   color: var(--White);
+}  
+.cart:hover{
+    cursor: default;
+    background-color: var(--Verydarkblue);
+    filter: grayscale(20%);
+} 
+@media (max-width:500px) {
+    .maincontainer {
+       display: flex;
+       flex-direction:column; 
+       max-width: 375px;
+       width: 100vmax;
+
+    }
+    .picture{
+        padding-top: 1rem;
+        margin-top: 1rem;
+    }
+    .picture img{
+        border-bottom-right-radius: 0rem;
+        border-bottom-left-radius: 0rem;
+        border-top-right-radius: 1rem;
+        display: inline-block;
+        width: 100%;
+        max-width: 90rem;
+        height: 300px;  
+}
+    .secondcontainer{
+        border-bottom-left-radius: 1rem;
+        border-top-right-radius: 0rem;
+        width:100vh;
+        max-width: 375px;
+
+    }
+}
